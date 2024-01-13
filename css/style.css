@@ -1,0 +1,181 @@
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 0.9rem;
+}
+
+.wrapper {
+  margin: 0 auto 100px;
+  padding: 0 4%;
+  max-width: 960px;
+  text-align: center;
+}
+
+.sec-title {
+  border-bottom: 1px solid #383e45;
+  color: #383e45;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 10px 4%;
+}
+
+.header h1 {
+  height: 40px;
+  width: 120px;
+  transition: 0.2s;
+}
+
+.header h1:hover {
+  opacity: 0.7;
+}
+
+.header h1 img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header nav ul {
+  display: flex;
+}
+
+.header nav ul li:not(:last-child) {
+  margin-right: 33px;
+  transition: 0.2s;
+}
+
+.header nav ul li a {
+  color: #24292e;
+  display: block;
+}
+
+.header nav ul li:hover {
+  opacity: 0.7;
+}
+
+/* Main Visual */
+.mainvisual {
+  margin-bottom: 90px;
+}
+
+.mainvisual img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 600px;
+  width: 100%;
+  max-width: 1920px;
+}
+
+/* About */
+.about .profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .profile img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin-right: 30px;
+}
+
+.about .profile .profile-txt {
+  color: #383e45;
+  text-align: left;
+}
+
+.about .profile .profile-txt h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Bicycle */
+.bicycle ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bicycle ul li {
+  color: #383e45;
+  height: 100%;
+  width: 32%;
+}
+
+.bicycle ul li img {
+  margin-bottom: 12px;
+  height: 100%;
+  width: 100%;
+}
+
+.bicycle ul li h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* footer */
+.footer {
+  padding-bottom: 12px;
+  text-align: center;
+}
+
+.footer p {
+  color: #383e45;
+  font-size: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .header h1:hover {
+    opacity: 1;
+  }
+
+  .header nav ul li:hover {
+    opacity: 1;
+  }
+
+  .mainvisual img {
+    height: calc(100vh - 60px);
+  }
+
+  .about .profile {
+    flex-direction: column;
+  }
+
+  .about .profile img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .bicycle ul {
+    flex-direction: column;
+  }
+
+  .bicycle ul li {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .bicycle ul li img {
+    margin-bottom: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
